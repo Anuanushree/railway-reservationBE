@@ -71,7 +71,7 @@ const userController = {
                 return response.status(404).json({ error: "Invalid mail id" });
             }
             const randomstring = Math.random().toString(20).substring(4, 15)
-            const link = `https://extraordinary-starburst-aecb1c.netlify.app/resetpassword/${user.id}`;
+            const link = `https://master--silly-kringle-51092c.netlify.app/resetpassword/${user.id}`;
             user.resetToken = randomstring;
             user.passwordActivated = true;
             await user.save();
