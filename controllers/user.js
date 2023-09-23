@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 const User = require('../model/user');
-const Hall = require('../model/hall');
+const Train = require('../model/train');
 const config = require('../utilis/config');
 const Secret = config.SECRET_CODE;
 
